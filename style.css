@@ -1,0 +1,314 @@
+@import url('http://fonts.cdnfonts.com/css/alata');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'alata', sans-serif;
+}
+
+body{
+    background-image: url(./media/mobile\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    background-color: purple;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img{
+    color: white;
+    width: 130px;
+    height: 30px;
+}
+
+.greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.greetings h1{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.greetings span{
+    color: purple;
+}
+
+.greetings p{
+    color: black;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: light;
+    margin-bottom: 15px;
+}
+
+.greetings h2{
+    color: purple;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.greetings a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: purple;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+}
+
+.greetings a:hover{
+    background-color: white;
+    color: purple;
+    border: 0.5px solid purple;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/* Styling Main.html */
+
+.phonie{
+    margin: 20px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: purple;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.phonie p{
+    color: white;
+    font-size: 18px;
+}
+
+.phonie input{
+    color: purple;
+    font-weight: medium;
+    font-size: medium;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+.phonie input::placeholder{
+    padding-inline: 10px;
+}
+
+.phonie input:focus{
+    outline: 2px solid rgb(66, 14, 66);
+}
+
+#messageBox{
+    display: none;
+}
+#mtn{
+    width: 70px;
+    height: 70px;
+    display: none;
+}
+#_9mobile{
+    width: 40px;
+    height: 70px;
+    display: none;
+}
+#airtel{
+    width: 110px;
+    height: 30px;
+    display: none;
+}
+#glo{
+    width: 70px;
+    height: 70px;
+    display: none;
+}
+#text{
+    display: none;
+}
+#text2{
+    display: none;
+}
+.phonie button{
+    color: purple;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.phonie button:hover{
+    background-color: purple;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/* MEDIA QUERIES FOR INDEX.HTML*/
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .greetings{
+        align-items: center;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .greetings h1{
+        display: flex;
+        gap: 10px;
+    }
+
+    .greetings p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .greetings{
+        align-items: center;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .greetings h1{
+        display: flex;
+        gap: 10px;
+        font-size: 50px;
+    }
+
+    .greetings h2{
+        font-size: 30px;
+    }
+    .greetings p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .greetings{
+        margin-top: 130px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .greetings{
+        align-items: center;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+
+
+    .greetings h1{
+        display: flex;
+        gap: 10px;
+        font-size: 80px;
+    }
+
+    .greetings h2{
+        font-size: 50px;
+    }
+    .greetings p{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERIES FOR MAIN.HTML*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .phonie p{
+        font-size: 23px;
+    }
+
+    .phonie input{
+        color: purple;
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .phonie button{
+        width: 90px;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+
+    .phonie{
+        margin: 200px;
+        margin-top: 200px;
+        height: 250px;
+    }
+    .phonie p{
+        font-size: 23px;
+    }
+
+    .phonie input{
+        color: purple;
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .phonie button{
+        width: 90px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .phonie{
+        margin: 500px;
+        margin-top: 200px;
+        height: 250px;
+    }
+    .phonie p{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .phonie input{
+        color: purple;
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .phonie button{
+        width: 90px;
+    }
+}
